@@ -97,7 +97,10 @@ for (let i = 0; i < enemies.length; i++) {
 }
 
 // Draw the game
-ctx.clearRect(0, 0, canvas.width, canvas.height);
+// Clear the canvas with a black background
+ctx.fillStyle = "black";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
 
 // Draw player spaceship
 ctx.fillStyle = "white";
