@@ -102,9 +102,14 @@ ctx.fillStyle = "black";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 
+// Load images
+const playerImage = new Image();
+playerImage.src = "player.png";
+
+
 // Draw player spaceship
 ctx.fillStyle = "white";
-ctx.fillRect(player.x, player.y, player.width, player.height);
+ctx.drawImage(playerImage, player.x, player.y, player.width, player.height);
 
 // Draw bullets
 ctx.fillStyle = "red";
